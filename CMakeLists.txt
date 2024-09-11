@@ -112,6 +112,7 @@ INCLUDE_DIRECTORIES(
 
 #find_package(absl REQUIRED PATHS C:/src/absl)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install)
 add_subdirectory(abseil-cpp)
 add_executable(${CMAKE_PROJECT_NAME} ${SRC})
 
